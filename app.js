@@ -7,23 +7,25 @@ if (!content.siteEnabled) {
 } else {
   const make = (tag, className, html = '') => { const node = document.createElement(tag); if (className) node.className = className; node.innerHTML = html; return node; };
   const externalAttrs = 'target="_blank" rel="noopener"';
-  const linkIcon = (url, label = 'Open source') => url ? `<a class="source-link" href="${url}" ${externalAttrs} aria-label="${label}" title="${label}"><i data-lucide="arrow-up-right"></i></a>` : '';
-  const titleLink = (item) => item.url ? `<a class="title-link" href="${item.url}" ${externalAttrs}>${item.title}<i data-lucide="arrow-up-right"></i></a>` : item.title;
+  const titleLink = (item) => item.url ? `<a class="title-link" href="${item.url}" ${externalAttrs}>${item.title}</a>` : item.title;
   document.querySelector('#bio').textContent = content.bio;
   document.querySelector('#bio-detail').textContent = content.bioDetail;
   document.querySelector('#year').textContent = new Date().getFullYear();
   const profiles = document.querySelector('#profile-links');
-  content.profiles.forEach((item) => { const a = make('a', 'profile-link', `<i data-lucide="${item.icon}"></i><span>${item.label}</span><i data-lucide="arrow-up-right"></i>`); a.href = item.url; if (!item.url.startsWith('mailto:')) { a.target = '_blank'; a.rel = 'noopener'; } profiles.append(a); });
+  content.profiles.forEach((item) => {
+    if (!item.url) { profiles.append(make('span', 'profile-link profile-link-pending', `<i data-lucide="${item.icon}"></i><span>${item.label}</span><small>${item.note || 'Coming soon'}</small>`)); return; }
+    const a = make('a', 'profile-link', `<i data-lucide="${item.icon}"></i><span>${item.label}</span>`); a.href = item.url; a.target = '_blank'; a.rel = 'noopener'; profiles.append(a);
+  });
   const research = document.querySelector('#research-grid');
   content.research.forEach((item) => research.append(make('article', 'research-item', `<div class="research-meta"><span>${item.number}</span><i data-lucide="${item.icon}"></i></div><h3>${item.title}</h3><p>${item.text}</p>`)));
   const pubs = document.querySelector('#publication-list');
-  content.publications.forEach((item) => pubs.append(make('article', 'publication-item', `<time>${item.year}</time><div><div class="pub-top"><span>${item.status}</span></div><h4>${titleLink(item)}</h4><p>${item.authors}</p><cite>${item.journal}</cite></div>`)));
+  content.publications.forEach((item) => { const statusClass = item.status.toLowerCase().replaceAll(' ', '-'); pubs.append(make('article', 'publication-item', `<time>${item.year}</time><div><div class="pub-top"><span class="status-${statusClass}">${item.status}</span></div><h4>${titleLink(item)}</h4><p>${item.authors}</p><cite>${item.journal}</cite></div>`)); });
   const patents = document.querySelector('#patent-list');
-  content.patents.forEach((item) => patents.append(make('article', 'patent-item', `<div><span>${item.no}</span><h4>${titleLink(item)}</h4><p>${item.authors}</p></div>`)));
+  content.patents.forEach((item) => patents.append(make('article', 'patent-item', `<span>${item.no}</span><div><h4>${titleLink(item)}</h4><p>${item.authors}</p></div>`)));
   document.querySelector('#patent-count').textContent = `${content.patents.length} granted`;
-  const renderTimeline = (selector, items) => { const parent = document.querySelector(selector); items.forEach((item) => parent.append(make('article', 'timeline-item', `<time>${item.date}</time><div><div class="item-title"><h4>${item.title}</h4>${linkIcon(item.url, `Open ${item.title}`)}</div><p>${item.place || ''}</p><span>${item.detail}</span></div>`))); };
+  const renderTimeline = (selector, items) => { const parent = document.querySelector(selector); items.forEach((item) => parent.append(make('article', 'timeline-item', `<time>${item.date}</time><div><h4>${titleLink(item)}</h4><p>${item.place || ''}</p><span>${item.detail}</span></div>`))); };
   renderTimeline('#education-list', content.education); renderTimeline('#conference-list', content.conferences);
-  const renderDense = (selector, items) => { const parent = document.querySelector(selector); items.forEach((item) => parent.append(make('article', 'dense-item', `<time>${item.date}</time><div><div class="item-title"><h4>${item.title}</h4>${linkIcon(item.url, `Open ${item.title}`)}</div><p>${item.detail}</p></div>`))); };
+  const renderDense = (selector, items) => { const parent = document.querySelector(selector); items.forEach((item) => parent.append(make('article', 'dense-item', `<time>${item.date}</time><div><h4>${titleLink(item)}</h4><p>${item.detail}</p></div>`))); };
   renderDense('#exchange-list', content.exchanges); renderDense('#project-list', content.projects); renderDense('#award-list', content.awards);
   document.querySelector('#exchange-count').textContent = `${content.exchanges.length} entries`; document.querySelector('#project-count').textContent = `${content.projects.length} projects`; document.querySelector('#award-count').textContent = `${content.awards.length} honors`;
   const menuButton = document.querySelector('#menu-toggle'); const nav = document.querySelector('#nav');

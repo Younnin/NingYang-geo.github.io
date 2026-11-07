@@ -2,11 +2,11 @@
 window.SITE_CONTENT = {
   siteEnabled: true,
   bio: "My doctoral research examines the cyclic evolution of faults under fluid-injection perturbations, with a particular focus on how frictional healing changes fault stability and seismic response.",
-  bioDetail: "I combine coupled shear-flow rock-mechanics experiments with rate-and-state friction simulations to reveal the thermo-hydro-mechanical mechanisms linking fault healing, instability evolution, and earthquake-event scaling. This work bridges fundamental earthquake physics and applications in geological engineering, subsurface energy development, and induced-seismicity risk assessment. My earlier research investigated the dynamic response and damage evolution of underground structures subjected to tunnel-blasting disturbances.",
+  bioDetail: "I combine coupled shear-flow rock-mechanics experiments with rate- and state-dependent friction simulations to reveal the thermo-hydro-mechanical-friction mechanisms linking fault healing, instability evolution, and earthquake-event scaling. This work bridges fundamental earthquake physics and applications in geological engineering, subsurface energy development, and induced-seismicity risk assessment. My earlier research investigated the dynamic response and damage evolution of underground structures subjected to tunnel-blasting disturbances.",
   profiles: [
     { label: "English CV", url: "assets/Ning-Yang-CV.pdf", icon: "file-text" },
     { label: "中文简历", url: "assets/Ning-Yang-CV-Chinese.pdf", icon: "languages" },
-    { label: "Email", url: "mailto:yangning23@mails.ucas.ac.cn", icon: "mail" }
+    { label: "Google Scholar", url: "", icon: "graduation-cap", note: "Coming soon" }
   ],
   research: [
     { number: "01", title: "Earthquake physics", text: "How do fault-zone processes evolve through the seismic cycle and ultimately produce unstable slip?", icon: "activity" },
@@ -33,9 +33,7 @@ window.SITE_CONTENT = {
     { no: "CN113217097B", title: "Deep open dewatering technique for tunnels in water-rich composite strata", authors: "Jianyong An, Ning Yang, et al.", url: "http://epub.cnipa.gov.cn/patent/CN113217097B" },
     { no: "CN114781040B", title: "Blasting vibration safety assessment for buildings", authors: "Xiaoming Guan, Ning Yang, et al.", url: "http://epub.cnipa.gov.cn/patent/CN114781040B" },
     { no: "CN114936342B", title: "Blasting charge calculation for near-field protected structures", authors: "Xiaoming Guan, Ning Yang, et al.", url: "http://epub.cnipa.gov.cn/patent/CN114936342B" },
-    { no: "CN115600368B", title: "Optimization method for deep-hole blasting", authors: "Xiaoming Guan, Ning Yang, et al.", url: "http://epub.cnipa.gov.cn/patent/CN115600368B" },
-    { no: "CN115218733B", title: "Deep-hole blasting device and its application method", authors: "Xiaoming Guan, Huawei Xu, Ning Yang, et al.", url: "http://epub.cnipa.gov.cn/patent/CN115218733B" },
-    { no: "CN115110962B", title: "Construction method and structural system for interchange-style support of closely spaced stacked crossing tunnels", authors: "Kunpeng Cui, Zhanjin Ning, Tao Zeng, Ning Yang, et al.", url: "http://epub.cnipa.gov.cn/patent/CN115110962B" }
+    { no: "CN115600368B", title: "Optimization method for deep-hole blasting", authors: "Xiaoming Guan, Ning Yang, et al.", url: "http://epub.cnipa.gov.cn/patent/CN115600368B" }
   ],
   education: [
     { date: "2023-2026", title: "Ph.D. · Civil Engineering", place: "Institute of Rock and Soil Mechanics, Chinese Academy of Sciences", detail: "Advisor: Prof. Peng-Zhi Pan · Thesis on fault healing, instability, and seismicity under fluid injection" },
@@ -43,41 +41,41 @@ window.SITE_CONTENT = {
     { date: "2016-2020", title: "B.S. · Civil Engineering", place: "Qingdao University of Technology", detail: "Underground engineering · Excellent Graduation Thesis" }
   ],
   conferences: [
-    { date: "2026", title: "CouFrac 2026 · Oral", place: "Uppsala, Sweden", detail: "Thermal healing regulates injection-induced fault reactivation stability", url: "https://www.coufrac2026.com/abstracts/" },
-    { date: "2025", title: "9th Symposium on Underground Waste Disposal · Oral", place: "Guiyang, China", detail: "Recommended Young Investigator Presentation", url: "http://www.csrme.com/About/Content/show/id/5685.do" },
-    { date: "2024", title: "CouFrac 2024 · Poster", place: "Kyoto, Japan", detail: "Invited to submit a full journal paper", url: "https://www.ec-convention.com/coufrac2024/index.html" }
+    { date: "2026", title: "International Conference on Coupled Processes in Fractured Geological Media (CouFrac 2026) · Oral Presentation", place: "Uppsala, Sweden", detail: "Thermal healing regulates injection-induced fault reactivation stability", url: "https://www.coufrac2026.com/abstracts/" },
+    { date: "2025", title: "Chinese Society for Rock Mechanics and Engineering (CSRME) 9th Symposium on Underground Waste Disposal · Oral Presentation", place: "Guiyang, China", detail: "Preliminary investigation on micro-slip and pore-pressure perturbation reactivation mechanisms of faults during healing periods in waste repositories · Recommended Young Investigator Presentation", url: "http://www.csrme.com/About/Content/show/id/5685.do" },
+    { date: "2024", title: "International Conference on Coupled Processes in Fractured Geological Media (CouFrac 2024) · Poster Presentation", place: "Kyoto, Japan", detail: "Numerical study on friction weakening and re-nucleation of faults induced by fluid injection during the interseismic period · Invited to submit a full journal paper", url: "https://www.ec-convention.com/coufrac2024/index.html" }
   ],
   exchanges: [
-    { date: "2026", title: "Academic visit coordination · Prof. Junlong Shang", detail: "University of Manchester; fracture heterogeneity and low-carbon subsurface engineering." },
-    { date: "2025", title: "Academic visit coordination · Prof. Christopher Spiers", detail: "Utrecht University; microphysical mechanisms of deformation, damage, healing, and fault friction." },
-    { date: "2025", title: "Academic visit coordination · Prof. Arno Zang", detail: "GFZ Helmholtz Centre; hydraulic fatigue and adaptive injection strategies for induced-seismicity mitigation." },
-    { date: "2025", title: "Academic visit coordination · Prof. Qingyun Duan", detail: "Hohai University; high-quality geoscience review writing and peer-review workflows." },
-    { date: "2025", title: "Special Training on AI-enabled Underground Engineering", detail: "Physics-informed neural networks, graph neural networks, interpretability, and geohazard prediction." },
-    { date: "2024", title: "Academic visit coordination · Dr. Amin Hekmatnejad", detail: "Universal Discontinuity Index and photogrammetry-deep-learning workflows for rock-mass assessment." },
-    { date: "2024", title: "In-situ CT experimental facility training and acceptance", detail: "System operation, rock-testing workflows, and full-system acceptance verification." },
-    { date: "2023", title: "Coal-mine field investigation", detail: "Underground surveys at Yima and Ordos with researchers from the Czech Academy of Sciences." }
+    { date: "2026", title: "Academic Visit Coordination · Prof. Junlong Shang", detail: "University of Manchester, United Kingdom · Fracture heterogeneity in subsurface rock systems and implications for geothermal exploitation, energy storage, nuclear-waste disposal, and induced-seismicity risk management." },
+    { date: "2025", title: "Academic Visit Coordination · Prof. Christopher Spiers", detail: "Utrecht University, Netherlands · Microphysical mechanisms of rock-salt deformation, damage, and healing; fault friction under crustal thermo-hydro-mechanical conditions." },
+    { date: "2025", title: "Academic Visit Coordination · Prof. Arno Zang", detail: "GFZ Helmholtz Centre for Geosciences, Germany · Rock hydraulic fatigue, fatigue hydraulic fracturing, and adaptive injection strategies for induced-seismicity mitigation." },
+    { date: "2025", title: "Academic Visit Coordination · Prof. Qingyun Duan", detail: "Hohai University, China · Preparation of high-quality geoscience review manuscripts, proposal development, submission workflows, and peer review." },
+    { date: "2025", title: "Special Training on Artificial Intelligence-enabled Underground Engineering", detail: "Chinese Academy of Sciences, Beijing · Physics-Informed Neural Networks (PINNs), Graph Neural Networks (GNNs), physical interpretability, and geohazard prediction." },
+    { date: "2024", title: "Academic Visit Coordination · Dr. Amin Hekmatnejad", detail: "Pontificia Universidad Catolica de Valparaiso, Chile · Universal Discontinuity Index (UDI) and photogrammetry-deep-learning workflows for automated rock-mass assessment." },
+    { date: "2024", title: "In-situ Computed Tomography (CT) Experimental Facility Training and Acceptance", detail: "Sanying Precision Instruments Co., Ltd., Tianjin, China · System principles, operational workflows, rock-testing procedures, and full-system acceptance verification." },
+    { date: "2023", title: "Coal-mine Field Investigation", detail: "Yima and Ordos, China · Underground surveys and project-oriented discussions with Assoc. Prof. Peter Konicek and Vlastimil Kajzar of the Czech Academy of Sciences." }
   ],
   projects: [
-    { date: "2025-2027", title: "Injection-induced seismicity and source mechanisms", detail: "State Key Laboratory Open Fund (SKLGGES-024007); shear-flow experiments, coordination, and micro-DEM research." },
-    { date: "2024-2027", title: "DECOVALEX 2027 · SAFENET-2", detail: "International THMC benchmark project; development and testing of coupled shear-flow modules in CASRock.", url: "https://decovalex.org/D-2027/safenet2" },
-    { date: "2023-2026", title: "Failure mechanisms and analytical methods for engineering rock masses", detail: "National Science Fund for Distinguished Young Scholars (52125903); fault shear stability experiments and modelling." },
-    { date: "2023-2026", title: "Luxi Pumped-Storage Hydropower Station", detail: "Core project member; cavern layout, support, dynamic stability, and seepage-scheme optimization." },
-    { date: "2024-2025", title: "GS Hydropower Station cavern stability", detail: "Dynamic response and safety evaluation of layered rock caverns and slopes under seismic loading." },
-    { date: "2022-2023", title: "Pipeline blasting damage and safety evaluation", detail: "Shandong Natural Science Foundation (ZR2022ME043); multiparameter response and unfavorable geometry identification." },
-    { date: "2022-2023", title: "Damage identification under urban tunnel blasting", detail: "Joint State Key Laboratory Open Fund (PBSKL2022C06); UAV imagery, recognition, and structural safety analysis." },
-    { date: "2022-2023", title: "Long-tunnel ventilation cavern stability", detail: "Safe construction process for large-span connecting passages and associated invention patents." },
-    { date: "2021-2022", title: "Green intelligent blasting control", detail: "Field surveys, vibration monitoring, deep-hole charging research, and blasting design optimization." },
-    { date: "2020-2023", title: "Higher-mode vibration and damage of existing structures", detail: "National Natural Science Foundation of China (51708317); numerical analysis and safety evaluation." },
-    { date: "2020-2022", title: "Tunnel blasting near underground pipelines", detail: "Shandong Key R&D Program (2019GSF111027); coupled vibration-stress monitoring and risk control." },
-    { date: "2020-2022", title: "Zhengzhou metro construction across major hazards", detail: "Field investigation and drainage/safe-construction optimization in water-rich sandy formations." }
+    { date: "2025-2027", title: "Open Fund of the State Key Laboratory of Geomechanics and Geotechnical Engineering Safety (SKLGGES-024007): Injection-induced Seismicity and Associated Source Mechanisms", detail: "Insights from laboratory tests and micro-discrete-element-method (micro-DEM) modelling; laboratory shear-seepage tests, project coordination, and academic visitor arrangements." },
+    { date: "2024-2027", title: "Development of Coupled Models and Their Validation Against Experiments (DECOVALEX 2027): Safety of Fluid Flow, Shear, Thermal and Reaction Processes within Crystalline Rock Fracture Networks (SAFENET-2)", detail: "International research project (QDS-10139A-CAS); numerical simulations of fault reactivation and induced seismicity.", url: "https://decovalex.org/D-2027/safenet2" },
+    { date: "2023-2026", title: "National Science Fund for Distinguished Young Scholars (52125903): Fracture Mechanism and Analysis Method of Engineering Rock Masses", detail: "Laboratory experiments, numerical modelling, result interpretation, and theoretical studies of rock-fault shear-friction stability." },
+    { date: "2023-2026", title: "Surrounding-rock Stability, Seepage Evaluation and Support Optimization for Underground Caverns of Luxi Pumped-Storage Hydropower Station", detail: "PowerChina Kunming Engineering Corporation Limited, Yunnan, China (E3415201) · Project lead for numerical analysis, reporting, defense, acceptance review, and optimized support strategies." },
+    { date: "2024-2025", title: "Failure Modes, Stability Criteria and Countermeasures for High-wall Caverns under Complex Geological Conditions at GS Hydropower Station", detail: "PowerChina Kunming Engineering Corporation Limited, Yunnan, China (E2415201) · Dynamic-simulation subgroup lead; seismic modelling, technical reporting, project defense, and acceptance." },
+    { date: "2022-2023", title: "Shandong Provincial Natural Science Foundation (ZR2022ME043): Pipeline Blasting Damage and Safety Evaluation", detail: "Multi-parameter dynamic response analysis and identification of unfavorable pipeline geometries under close-proximity tunnel blasting." },
+    { date: "2022-2023", title: "Joint Open Fund of a State Key Laboratory (PBSKL2022C06): Structural Damage Identification under Urban Tunnel Blasting", detail: "Unmanned Aerial Vehicle (UAV) imagery, damage recognition, and structural safety analysis." },
+    { date: "2022-2023", title: "Long-tunnel Ventilation Cavern Stability and Safe Construction", detail: "Construction-process optimization for large-span connecting passages, with associated Chinese invention patents." },
+    { date: "2021-2022", title: "Big-data-driven Green Intelligent Blasting-control Technology for Complex Subgrades", detail: "Industrial project with Shandong Hi-Speed Group Co., Ltd. (B2-2022-0063); field reconnaissance, blasting-vibration monitoring, blast-hole design, seismic-wave acquisition, and data analysis." },
+    { date: "2020-2023", title: "National Natural Science Foundation of China (51708317): High-order Modal Vibration Effects and Damage Characteristics of Existing Structures under Tunnel Blasting", detail: "Field blasting monitoring, numerical analysis, structural damage assessment, and safety evaluation." },
+    { date: "2020-2022", title: "Shandong Provincial Key Research and Development Program (2019GSF111027): Tunnel Blasting near Underground Pipelines", detail: "Coupled vibration-stress monitoring, dynamic-response analysis, and risk-control strategies." },
+    { date: "2020-2022", title: "Key Construction Technologies for Zhengzhou Metro Crossing Major Hazard Sources", detail: "Industrial project with China Construction Second Engineering Bureau Ltd., Henan, China (B2-2019-0243); construction and risk-mitigation strategies for high-water-level loess and water-rich sandy formations." }
   ],
   awards: [
-    { date: "2026", title: "Merit Student", detail: "University of Chinese Academy of Sciences" },
+    { date: "2026", title: "Merit Student", detail: "Institute of Rock and Soil Mechanics, Chinese Academy of Sciences (IRSM, CAS)" },
     { date: "2023", title: "Outstanding Graduate of Shandong Province", detail: "Shandong Provincial Department of Education", url: "https://hrss.shandong.gov.cn/cxjc/anti/viewPdfSecurity?type=security&code=GXYP23YZS10429N429004363-3CE08B5CA3" },
     { date: "2023", title: "Second Prize, Science and Technology Award", detail: "China Communications and Transportation Association · Rank 7/15", url: "https://www.cctaw.cn/d/file/p/2023/04-07/c4c760ff968879a90c121c4ef18f494a.pdf" },
-    { date: "2022", title: "National Scholarship", detail: "Ministry of Education of P.R. China", url: "https://civil.qut.edu.cn/info/1211/7389.htm" },
+    { date: "2022", title: "National Scholarship", detail: "Ministry of Education of the People's Republic of China · Awarded to top-performing postgraduate students for academic excellence", url: "https://civil.qut.edu.cn/info/1211/7389.htm" },
     { date: "2022", title: "Second Prize, Outstanding Graduate Student", detail: "Qingdao University of Technology" },
-    { date: "2020", title: "Excellent Graduation Thesis", detail: "Qingdao University of Technology", url: "https://jw.qut.edu.cn/info/1005/1931.htm" },
+    { date: "2020", title: "Excellent Graduation Thesis and Selection for Public Defense", detail: "Qingdao University of Technology · Ranked 4/440; competitive oral defense reviewed by academic and industry experts", url: "https://jw.qut.edu.cn/info/1005/1931.htm" },
     { date: "2019", title: "Outstanding Student Model", detail: "Qingdao University of Technology" },
     { date: "2018", title: "Outstanding Student", detail: "Qingdao University of Technology" }
   ]
