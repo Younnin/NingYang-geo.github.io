@@ -6,7 +6,7 @@ window.SITE_CONTENT = {
   profiles: [
     { label: "English CV", url: "assets/Ning-Yang-CV.pdf", icon: "file-text" },
     { label: "中文简历", url: "assets/Ning-Yang-CV-Chinese.pdf", icon: "languages" },
-    { label: "Google Scholar", url: "", icon: "graduation-cap", note: "Coming soon" }
+    { label: "Google Scholar", url: "https://scholar.google.com/citations?user=Xe28zMkAAAAJ&hl=en", icon: "graduation-cap" }
   ],
   research: [
     { number: "01", title: "Earthquake physics", text: "How do fault-zone processes evolve through the seismic cycle and ultimately produce unstable slip?", icon: "activity" },
