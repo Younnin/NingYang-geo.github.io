@@ -55,11 +55,11 @@ siteEnabled: true,
 
 ## 5. 更换图片
 
-当前图片如下：
+当前主页仅使用个人照片，以避免宽屏背景裁剪影响阅读。两张山景原图仍保存在资源目录，后续可用于相册或独立图片模块：
 
 - `assets/portrait.jpg`：个人照片
-- `assets/mountain-sunset.jpg`：中部横幅
-- `assets/mountain-stars.jpg`：底部横幅
+- `assets/mountain-sunset.jpg`：备用山景图
+- `assets/mountain-stars.jpg`：备用山景图
 
 替换时使用相同文件名即可，不需要修改代码。建议个人照片保持竖向 4:5，背景图保持横向。
 
