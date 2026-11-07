@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Academic homepage of Ning Yang, researching fault friction, earthquake physics, and induced seismicity.">
+  <meta name="theme-color" content="#f2f3ef"><title>Ning Yang | Fault Mechanics & Induced Seismicity</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"><script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script><script src="content.js" defer></script><script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="site-offline" class="offline" hidden><p class="eyebrow">Ning Yang</p><h1>This page is temporarily unavailable.</h1><p>Please check back later.</p></div>
+  <div id="site-shell">
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Ning Yang, home"><span class="brand-mark">NY</span><span>Ning Yang</span></a>
+      <nav id="nav" aria-label="Main navigation"><a href="#about">About</a><a href="#research">Research</a><a href="#outputs">Outputs</a><a href="#experience">Experience</a><a href="#contact">Contact</a></nav>
+      <div class="header-actions"><button id="theme-toggle" class="icon-button" type="button" aria-label="Switch color theme" title="Switch color theme"><i data-lucide="sun"></i></button><button id="menu-toggle" class="icon-button menu-button" type="button" aria-controls="nav" aria-expanded="false" aria-label="Open menu" title="Menu"><i data-lucide="menu"></i></button></div>
+    </header>
+    <main id="main">
+      <section id="home" class="hero" aria-labelledby="hero-name">
+        <div class="hero-copy"><p class="eyebrow">Academic homepage</p><h1 id="hero-name">Ning Yang</h1><p class="hero-role">Ph.D. Candidate in Civil Engineering</p><p class="hero-lede">I study how fault healing, fluid injection, and thermo-hydro-mechanical coupling govern fault stability and earthquake nucleation.</p><div class="tag-row"><span>Earthquake physics</span><span>Fault friction</span><span>Induced seismicity</span></div><div class="hero-actions"><a class="button primary" href="#research">Explore research <i data-lucide="arrow-down-right"></i></a><a class="button secondary" href="mailto:yangning23@mails.ucas.ac.cn">Get in touch <i data-lucide="mail"></i></a></div></div>
+        <figure class="portrait-wrap"><img src="assets/portrait.jpg" alt="Portrait of Ning Yang"><figcaption>Wuhan, China · 2026</figcaption></figure>
+      </section>
+      <section id="about" class="section about-section" aria-labelledby="about-title"><div class="section-label"><p class="section-index">01 / About</p><h2 id="about-title">Fault processes across scales</h2></div><div class="about-copy"><p class="lead" id="bio"></p><p id="bio-detail"></p><div id="profile-links" class="profile-links" aria-label="CV and academic links"></div><dl class="facts"><div><dt>Current position</dt><dd>Ph.D. Candidate, expected Dec 2026</dd></div><div><dt>Institution</dt><dd>IRSM, Chinese Academy of Sciences</dd></div><div><dt>Advisor</dt><dd><a href="https://people.ucas.ac.cn/~pzpan?language=en" target="_blank" rel="noopener">Prof. Peng-Zhi Pan</a></dd></div></dl></div></section>
+      <section id="research" class="section research-section" aria-labelledby="research-title"><div class="section-label"><p class="section-index">02 / Research</p><h2 id="research-title">Research questions</h2></div><div id="research-grid" class="research-grid"></div></section>
+      <aside class="image-band" aria-label="Mountain landscape at sunset"><div><p>From grain contacts to fault systems</p><span>Experiments · Modelling · Engineering translation</span></div></aside>
+      <section id="outputs" class="section outputs-section" aria-labelledby="outputs-title"><div class="section-label"><p class="section-index">03 / Outputs</p><h2 id="outputs-title">Publications & patents</h2></div><div class="output-content"><div class="output-heading"><h3>Peer-reviewed publications</h3><p>Published, under review, and ongoing work from the current CV.</p></div><div id="publication-list" class="publication-list"></div><details class="expandable" open><summary><span>Issued invention patents</span><span id="patent-count"></span></summary><div id="patent-list" class="patent-list"></div></details></div></section>
+      <section id="experience" class="section experience-section" aria-labelledby="experience-title"><div class="section-label"><p class="section-index">04 / Experience</p><h2 id="experience-title">Education & experience</h2></div><div class="experience-content"><div class="two-column-block"><div><h3 class="subheading">Education</h3><div id="education-list" class="timeline"></div></div><div><h3 class="subheading">Conference presentations</h3><div id="conference-list" class="timeline"></div></div></div><details class="expandable" open><summary><span>Academic exchange & training</span><span id="exchange-count"></span></summary><div id="exchange-list" class="dense-list"></div></details><details class="expandable"><summary><span>Research, field & engineering projects</span><span id="project-count"></span></summary><div id="project-list" class="dense-list"></div></details><details class="expandable"><summary><span>Honors & awards</span><span id="award-count"></span></summary><div id="award-list" class="dense-list"></div></details></div></section>
+      <section class="photo-break" aria-label="Snow mountain under a starry sky"><div><p>Curiosity across physics, Earth science, and engineering.</p></div></section>
+      <section id="contact" class="contact-section" aria-labelledby="contact-title"><div><p class="section-index light">05 / Contact</p><h2 id="contact-title">Let’s discuss faults,<br>friction, and fluids.</h2></div><div class="contact-copy"><p>I welcome conversations about earthquake physics, induced seismicity, experimental rock mechanics, and interdisciplinary research opportunities.</p><a class="contact-email" href="mailto:yangning23@mails.ucas.ac.cn">yangning23@mails.ucas.ac.cn <i data-lucide="arrow-up-right"></i></a><p class="contact-address">State Key Laboratory of Geomechanics and Geotechnical Engineering Safety<br>Institute of Rock and Soil Mechanics, Chinese Academy of Sciences<br>Wuhan, Hubei, China</p></div></section>
+    </main>
+    <footer><p>© <span id="year"></span> Ning Yang</p><p>Last updated November 2026 · <a href="#home">Back to top</a></p></footer>
+  </div>
+</body></html>
