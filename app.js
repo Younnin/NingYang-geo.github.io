@@ -8,6 +8,7 @@ if (!content.siteEnabled) {
   const make = (tag, className, html = '') => { const node = document.createElement(tag); if (className) node.className = className; node.innerHTML = html; return node; };
   const externalAttrs = 'target="_blank" rel="noopener"';
   const linkIcon = (url, label = 'Open source') => url ? `<a class="source-link" href="${url}" ${externalAttrs} aria-label="${label}" title="${label}"><i data-lucide="arrow-up-right"></i></a>` : '';
+  const titleLink = (item) => item.url ? `<a class="title-link" href="${item.url}" ${externalAttrs}>${item.title}<i data-lucide="arrow-up-right"></i></a>` : item.title;
   document.querySelector('#bio').textContent = content.bio;
   document.querySelector('#bio-detail').textContent = content.bioDetail;
   document.querySelector('#year').textContent = new Date().getFullYear();
@@ -16,9 +17,9 @@ if (!content.siteEnabled) {
   const research = document.querySelector('#research-grid');
   content.research.forEach((item) => research.append(make('article', 'research-item', `<div class="research-meta"><span>${item.number}</span><i data-lucide="${item.icon}"></i></div><h3>${item.title}</h3><p>${item.text}</p>`)));
   const pubs = document.querySelector('#publication-list');
-  content.publications.forEach((item) => pubs.append(make('article', 'publication-item', `<time>${item.year}</time><div><div class="pub-top"><span>${item.status}</span>${linkIcon(item.url, `Open ${item.title}`)}</div><h4>${item.title}</h4><p>${item.authors}</p><cite>${item.journal}</cite></div>`)));
+  content.publications.forEach((item) => pubs.append(make('article', 'publication-item', `<time>${item.year}</time><div><div class="pub-top"><span>${item.status}</span></div><h4>${titleLink(item)}</h4><p>${item.authors}</p><cite>${item.journal}</cite></div>`)));
   const patents = document.querySelector('#patent-list');
-  content.patents.forEach((item) => patents.append(make('article', 'patent-item', `<div><span>${item.no}</span><h4>${item.title}</h4><p>${item.authors}</p></div>${linkIcon(item.url, `Open patent ${item.no}`)}`)));
+  content.patents.forEach((item) => patents.append(make('article', 'patent-item', `<div><span>${item.no}</span><h4>${titleLink(item)}</h4><p>${item.authors}</p></div>`)));
   document.querySelector('#patent-count').textContent = `${content.patents.length} granted`;
   const renderTimeline = (selector, items) => { const parent = document.querySelector(selector); items.forEach((item) => parent.append(make('article', 'timeline-item', `<time>${item.date}</time><div><div class="item-title"><h4>${item.title}</h4>${linkIcon(item.url, `Open ${item.title}`)}</div><p>${item.place || ''}</p><span>${item.detail}</span></div>`))); };
   renderTimeline('#education-list', content.education); renderTimeline('#conference-list', content.conferences);
