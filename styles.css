@@ -186,9 +186,9 @@ footer{font-size:13px}
 #exchange-list .dense-item h4{color:var(--accent)}
 .title-link{text-decoration-thickness:1px;text-underline-offset:5px}
 .title-link:hover,.title-link:focus-visible{text-decoration:underline}
-.contact-section{position:relative;padding-top:120px;background:linear-gradient(180deg,var(--bg) 0%,#d8dfda 5%,#82988f 13%,#34564b 25%,#0f1d19 43%,#0f1d19 100%)}
-:root[data-theme="dark"] .contact-section{background:linear-gradient(180deg,var(--bg) 0%,#182420 8%,#15332b 22%,#0f1d19 42%,#0f1d19 100%)}
-.contact-section h2{max-width:720px;font-size:clamp(38px,4vw,58px);line-height:1.08}
+.contact-section{position:relative;min-height:620px;padding-top:145px;background:linear-gradient(180deg,var(--bg) 0%,rgba(242,243,239,.94) 5%,rgba(242,243,239,.28) 20%,rgba(10,18,24,.12) 36%,rgba(8,15,20,.68) 100%),linear-gradient(90deg,rgba(8,15,20,.58),rgba(8,15,20,.08) 55%,rgba(8,15,20,.38)),url("assets/contact-mountain.jpg") center 54%/cover no-repeat}
+:root[data-theme="dark"] .contact-section{background:linear-gradient(180deg,var(--bg) 0%,rgba(18,24,22,.92) 6%,rgba(18,24,22,.24) 22%,rgba(8,15,20,.12) 38%,rgba(8,15,20,.7) 100%),linear-gradient(90deg,rgba(8,15,20,.58),rgba(8,15,20,.08) 55%,rgba(8,15,20,.38)),url("assets/contact-mountain.jpg") center 54%/cover no-repeat}
+.contact-section h2{max-width:680px;font-size:clamp(34px,3.25vw,50px);line-height:1.1}
 .contact-copy{padding-top:44px}
 .contact-address{font-size:18px;line-height:1.65}
 .contact-email{margin-top:0}
@@ -200,7 +200,8 @@ footer{font-size:13px}
   .publication-item,.patent-item,.timeline-item,.dense-item{grid-template-columns:minmax(0,1fr);gap:7px}
   .publication-item time,.timeline time,.dense-item time{font-size:16px}
   .patent-item h4,.timeline h4,.dense-item h4{font-size:19px}
-  .contact-section{padding-top:90px}
+  .contact-section{min-height:650px;padding-top:120px;background-position:center,center,58% center}
+  .contact-section h2{font-size:32px}
   .contact-copy{padding-top:0}
   .contact-address{font-size:16px}
 }
