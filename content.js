@@ -1,6 +1,6 @@
 /* Edit this file to maintain the homepage. Keep quotes, commas, and braces. */
 window.SITE_CONTENT = {
-  siteEnabled: ture,
+  siteEnabled: true,
   bio: "My doctoral research examines the cyclic evolution of faults under fluid-injection perturbations, with a particular focus on how frictional healing changes fault stability and seismic response.",
   bioDetail: "I combine coupled shear-flow rock-mechanics experiments with rate- and state-dependent friction simulations to reveal the thermo-hydro-mechanical-friction mechanisms linking fault healing, instability evolution, and earthquake-event scaling. This work bridges fundamental earthquake physics and applications in geological engineering, subsurface energy development, and induced-seismicity risk assessment. My earlier research investigated the dynamic response and damage evolution of underground structures subjected to tunnel-blasting disturbances.",
   profiles: [
