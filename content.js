@@ -32,7 +32,7 @@ window.SITE_CONTENT = {
   // 论文列表：year=年份，status=状态，title=题目，authors=作者，journal=期刊，url=论文链接。
   // status 可使用 In preparation、Under review、Accepted 或 Published。暂时没有链接时可以不写 url。
   publications: [
-    { year: "2026", status: "In preparation", title: "Mechanism of fault healing and slip nucleation under thermo-hydro-mechanical coupling", authors: "Ning Yang, Peng-Zhi Pan, et al.", journal: "International Journal of Rock Mechanics and Mining Sciences" },
+    { year: "2026", status: "Submitted", title: "Mechanism of fault healing and slip nucleation under thermo-hydro-mechanical coupling", authors: "Ning Yang, Peng-Zhi Pan, et al.", journal: "International Journal of Rock Mechanics and Mining Sciences" },
     { year: "2026", status: "Under review", title: "Frictional healing-regulated stability of injection-induced fault reactivation", authors: "Ning Yang, Peng-Zhi Pan, et al.", journal: "Earth and Planetary Science Letters" },
     { year: "2027", status: "Published", title: "Fault healing and its control on reactivation: from laboratory experiments to subsurface energy applications", authors: "Peng-Zhi Pan*, Ning Yang*, et al.", journal: "Renewable and Sustainable Energy Reviews, 245, 117693", url: "https://www.sciencedirect.com/science/article/abs/pii/S1364032126009962" },
     { year: "2026", status: "Published", title: "Laboratory-scale characteristics of micro-slip during fault quiescence and implications for injection-induced reactivation stability", authors: "Ning Yang, Peng-Zhi Pan*, et al.", journal: "International Journal of Rock Mechanics and Mining Sciences, 197, 106339", url: "https://www.sciencedirect.com/science/article/abs/pii/S1365160925003168" },
