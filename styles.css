@@ -171,6 +171,7 @@ footer{font-size:13px}
 .pub-top>span{font-size:15px}
 .pub-top .status-under-review{color:#7652a8}
 .pub-top .status-in-preparation{color:#2f6eb5}
+.pub-top .status-submitted{color:#c26a20}
 .patent-list{display:block;border-left:0}
 .patent-item{display:grid;grid-template-columns:150px minmax(0,1fr);gap:24px;padding:22px 0;border-right:0}
 .patent-item>span{font-size:16px;font-weight:500}
