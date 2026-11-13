@@ -6,7 +6,7 @@
  */
 window.SITE_CONTENT = {
   // 主页开关：true 显示完整主页；false 只显示“暂时不可用”页面。
-  siteEnabled: false, // true显示完整主页,false暂停显示主页
+  siteEnabled: true, // true显示完整主页,false暂停显示主页
 
   // About 部分：bio 是突出显示的简介，bioDetail 是下方的详细研究介绍。
   bio: "My doctoral research examines the cyclic evolution of faults under fluid-injection perturbations, with a particular focus on how frictional healing changes fault stability and seismic response.",
